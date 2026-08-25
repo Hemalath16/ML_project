@@ -316,7 +316,7 @@ def show_model_results(
 
     st.dataframe(
         cm_df,
-        use_container_width=True
+        width='stretch'
     )
 
     # --------------------------------------------------------
@@ -344,7 +344,7 @@ def show_model_results(
 
     st.dataframe(
         report_df.round(3),
-        use_container_width=True
+        width='stretch'
     )
 
     # --------------------------------------------------------
@@ -385,7 +385,7 @@ def show_model_results(
 
     st.plotly_chart(
         roc_fig,
-        use_container_width=True
+        width='stretch'
     )
 
     # --------------------------------------------------------
@@ -416,7 +416,7 @@ def show_model_results(
 
         st.plotly_chart(
             importance_fig,
-            use_container_width=True
+            width='stretch'
         )
 
 
@@ -488,7 +488,7 @@ if page == "Home":
 
         st.dataframe(
             model_table,
-            use_container_width=True,
+            width='stretch',
             hide_index=True
         )
 
@@ -529,7 +529,7 @@ elif page == "Dataset Analysis":
 
         st.dataframe(
             df.head(10),
-            use_container_width=True
+            width='stretch'
         )
 
         st.subheader(
@@ -569,7 +569,7 @@ elif page == "Dataset Analysis":
 
         st.dataframe(
             dtype_df,
-            use_container_width=True,
+            width='stretch',
             hide_index=True
         )
 
@@ -584,7 +584,7 @@ elif page == "Dataset Analysis":
 
         st.dataframe(
             missing_df,
-            use_container_width=True,
+            width='stretch',
             hide_index=True
         )
 
@@ -614,7 +614,7 @@ elif page == "Dataset Analysis":
 
         st.dataframe(
             df.describe(),
-            use_container_width=True
+            width='stretch'
         )
 
         st.subheader(
@@ -640,7 +640,7 @@ elif page == "Dataset Analysis":
 
         st.dataframe(
             target_df,
-            use_container_width=True,
+            width='stretch',
             hide_index=True
         )
 
@@ -697,7 +697,7 @@ elif page == "Visualization":
 
         st.plotly_chart(
             fig1,
-            use_container_width=True
+            width='stretch'
         )
 
         st.subheader(
@@ -718,7 +718,7 @@ elif page == "Visualization":
 
         st.plotly_chart(
             fig2,
-            use_container_width=True
+            width='stretch'
         )
 
         st.subheader(
@@ -753,7 +753,7 @@ elif page == "Visualization":
 
         st.plotly_chart(
             fig3,
-            use_container_width=True
+            width='stretch'
         )
 
         st.subheader(
@@ -780,7 +780,7 @@ elif page == "Visualization":
 
         st.plotly_chart(
             fig4,
-            use_container_width=True
+            width='stretch'
         )
 
         st.subheader(
@@ -807,7 +807,7 @@ elif page == "Visualization":
 
             st.plotly_chart(
                 fig5,
-                use_container_width=True
+                width='stretch'
             )
 
         else:
@@ -965,7 +965,7 @@ elif page == "Model Comparison":
 
         st.dataframe(
             comparison_df.round(2),
-            use_container_width=True,
+            width='stretch',
             hide_index=True
         )
 
@@ -988,7 +988,7 @@ elif page == "Model Comparison":
 
         st.plotly_chart(
             accuracy_fig,
-            use_container_width=True
+            width='stretch'
         )
 
         st.subheader(
@@ -1024,7 +1024,7 @@ elif page == "Model Comparison":
 
         st.plotly_chart(
             all_metrics_fig,
-            use_container_width=True
+            width='stretch'
         )
 
         st.subheader(
@@ -1058,7 +1058,7 @@ elif page == "Model Comparison":
 
         st.dataframe(
             ranking_df.round(2),
-            use_container_width=True,
+            width='stretch',
             hide_index=True
         )
 
@@ -1193,7 +1193,7 @@ elif page == "Water Prediction":
         predict_button = st.button(
             "🔍 Predict Water Potability",
             type="primary",
-            use_container_width=True
+            width='stretch'
         )
 
         if predict_button:
@@ -1344,7 +1344,7 @@ elif page == "Water Prediction":
 
                 st.dataframe(
                     prediction_df,
-                    use_container_width=True,
+                    width='stretch',
                     hide_index=True
                 )
 
